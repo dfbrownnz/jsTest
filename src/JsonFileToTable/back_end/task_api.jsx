@@ -13,12 +13,8 @@ function TasksApp() {
   //https://www.geeksforgeeks.org/how-to-parse-json-data-into-react-table-component/?ref=ml_lbp
   useEffect(() => {
     axios.get('https://jsonplaceholder.typicode.com/posts')
-      .then(response => {
-        setPosts(response.data);
-      })
-      .catch(error => {
-        console.error(error);
-      });
+      .then(response => { setPosts(response.data); })
+      .catch(error => {        console.error(error);      });
   }, []);
 
   return (

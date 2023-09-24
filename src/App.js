@@ -6,6 +6,9 @@ import JsonDataDisplay from './JsonFileToTable/StudentTable'
 import FrmTableData from './FormToTable/StudentFormJsx';
 //import TasksApp from "./JsonFileToTable/back_end/task_api";
 import TasksApp from "./JsonFileToTable/back_end/task_api";
+import ObfApp from "./BackEnd/obf";
+import ObfClientsApp from "./BackEnd/ObfClients";
+
 //npm install axios
 // import axios from 'axios'; // not used. get CORS error two API on one machine.
 
@@ -77,17 +80,20 @@ function App() {
                 <p>{api_student.age}</p>
                 <p>{api_student.date}</p>
                 <p>{api_student.programming}</p>
+                <ObfClientsApp/>
                     {/* <ul>
                 {posts.map(post => (        <li key={post.task_id}>{post.person}</li>      ))}    </ul>  );
  */}
- 
+                
                 <h3>local file</h3>
                 <JsonDataDisplay />
+                <ObfApp/>
 
                 <h3> to file doesnt work</h3>
                 FrmTableData npm start to get this working. react is front end and you send data to back end api to save it.
                 <FrmTableData />
                 <TasksApp/>
+                
             </div>
         </div>
     );
