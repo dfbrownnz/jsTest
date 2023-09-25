@@ -1,0 +1,143 @@
+[
+    {
+      "Folio":221177,
+      "ArrivalDate":"03\/09\/2024",
+      "DepartureDate":"03\/16\/2024",
+      "Rent":"$ 2,650.00",
+      "PropertyName":"Wagon Road 51",
+      "TenantFirstName":"Tony",
+      "TenantLastName":"Liakonis",
+      "ReservationType":"Regular"
+    },
+    {
+      "Folio":223138,
+      "ArrivalDate":"03\/23\/2024",
+      "DepartureDate":"03\/30\/2024",
+      "Rent":null,
+      "PropertyName":"Wagon Road 51",
+      "TenantFirstName":"Brianne",
+      "TenantLastName":"Brown",
+      "ReservationType":"Owner Occupied"
+    },
+    {
+      "Folio":221535,
+      "ArrivalDate":"03\/30\/2024",
+      "DepartureDate":"04\/06\/2024",
+      "Rent":"$ 3,900.00",
+      "PropertyName":"Wagon Road 51",
+      "TenantFirstName":"Joseph",
+      "TenantLastName":"Kovaleski",
+      "ReservationType":"Regular"
+    },
+    {
+      "Folio":222615,
+      "ArrivalDate":"04\/15\/2024",
+      "DepartureDate":"04\/22\/2024",
+      "Rent":"$ 3,100.02",
+      "PropertyName":"Wagon Road 51",
+      "TenantFirstName":"Stephen",
+      "TenantLastName":"Grant",
+      "ReservationType":"Homeaway"
+    },
+    {
+      "Folio":223045,
+      "ArrivalDate":"06\/01\/2024",
+      "DepartureDate":"06\/08\/2024",
+      "Rent":"$ 5,000.00",
+      "PropertyName":"Wagon Road 51",
+      "TenantFirstName":"Michaela",
+      "TenantLastName":"Costello",
+      "ReservationType":"Homeaway"
+    },
+    {
+      "Folio":223139,
+      "ArrivalDate":"06\/15\/2024",
+      "DepartureDate":"06\/22\/2024",
+      "Rent":null,
+      "PropertyName":"Wagon Road 51",
+      "TenantFirstName":"Brianne",
+      "TenantLastName":"Brown",
+      "ReservationType":"Owner Occupied"
+    },
+    {
+      "Folio":222977,
+      "ArrivalDate":"08\/03\/2024",
+      "DepartureDate":"08\/10\/2024",
+      "Rent":"$ 4,700.00",
+      "PropertyName":"Wagon Road 51",
+      "TenantFirstName":"Paul",
+      "TenantLastName":"Neumeier",
+      "ReservationType":"Regular"
+    },
+    {
+      "Folio":223169,
+      "ArrivalDate":"08\/10\/2024",
+      "DepartureDate":"08\/17\/2024",
+      "Rent":"$ 3,900.00",
+      "PropertyName":"Wagon Road 51",
+      "TenantFirstName":"Tracey",
+      "TenantLastName":"VanCott",
+      "ReservationType":"Web Booking"
+    },
+      {
+        "Folio":221754,
+        "ArrivalDate":"09\/14\/2023",
+        "DepartureDate":"09\/21\/2023",
+        "Rent":null,
+        "PropertyName":"Wagon Road 51",
+        "TenantFirstName":"Sara",
+        "TenantLastName":"Whaley",
+        "ReservationType":"Owner guest"
+      },
+      {
+        "Folio":221667,
+        "ArrivalDate":"10\/01\/2023",
+        "DepartureDate":"10\/06\/2023",
+        "Rent":null,
+        "PropertyName":"Wagon Road 51",
+        "TenantFirstName":"Brianne",
+        "TenantLastName":"Brown",
+        
+        "ReservationType":"Owner Occupied"
+      },
+      {
+        "Folio":221563,
+        "ArrivalDate":"10\/07\/2023",
+        "DepartureDate":"10\/14\/2023",
+        "Rent":"$ 2,200.00",
+        "PropertyName":"Wagon Road 51",
+        "TenantFirstName":"Elizabeth",
+        "TenantLastName":"Reeve",
+        "ReservationType":"Homeaway"
+      },
+      {
+        "Folio":222593,
+        "ArrivalDate":"10\/14\/2023",
+        "DepartureDate":"10\/21\/2023",
+        "Rent":"$ 2,200.00",
+        "PropertyName":"Wagon Road 51",
+        "TenantFirstName":"Thomas",
+        "TenantLastName":"Turner",
+        "ReservationType":"Homeaway"
+      },
+      {
+        "Folio":223062,
+        "ArrivalDate":"11\/19\/2023",
+        "DepartureDate":"11\/26\/2023",
+        "Rent":"$ 3,500.00",
+        "PropertyName":"Wagon Road 51",
+        "TenantFirstName":"Jean",
+        "TenantLastName":"Northup",
+        "ReservationType":"Regular"
+      },
+      {
+        "Folio":221304,
+        "ArrivalDate":"12\/01\/2023",
+        "DepartureDate":"03\/01\/2024",
+        "Rent":"$ 18,000.00",
+        "PropertyName":"Wagon Road 51",
+        "TenantFirstName":"Muriel",
+        "TenantLastName":"Berry",
+        "ReservationType":"Monthly"
+      }
+    ]

@@ -8,6 +8,9 @@ import FrmTableData from './FormToTable/StudentFormJsx';
 import TasksApp from "./JsonFileToTable/back_end/task_api";
 import ObfApp from "./BackEnd/obf";
 import ObfClientsApp from "./BackEnd/ObfClients";
+import JsonDataHhiDisplay from "./JsonFileToTable/HhiReservationsTable";
+
+import TableBeingFilter from "./BackEnd/TableFilter/TableBeingFilterjsx";
 
 //npm install axios
 // import axios from 'axios'; // not used. get CORS error two API on one machine.
@@ -17,12 +20,12 @@ import ObfClientsApp from "./BackEnd/ObfClients";
 function App() {
     // usestate for setting a javascript
     // object for storing and using data
-    const [api_student, setdata] = useState({
-        name: "",
-        age: 0,
-        date: "",
-        programming: "",
-    });
+    // const [api_student, setdata] = useState({
+    //     name: "",
+    //     age: 0,
+    //     date: "",
+    //     programming: "",
+    // });
 
     // const [api_student, setdata] = useState("");
     // const [api_student, setdata] = useState([]);
@@ -31,24 +34,24 @@ function App() {
     
 
     // // Using useEffect for single rendering
-    useEffect(() => {
-        // Using fetch to fetch the api from
-        // flask server it will be redirected to proxy
-        fetch("/react_be").then((res) =>
-            res.json().then((api_student) => {
-              // setdata( api_student.data.children.map(c => c.data));
+    // useEffect(() => {
+    //     // Using fetch to fetch the api from
+    //     // flask server it will be redirected to proxy
+    //     fetch("/react_be").then((res) =>
+    //         res.json().then((api_student) => {
+    //           // setdata( api_student.data.children.map(c => c.data));
               
 
-                // // Setting a data from api
-                setdata({
-                    name: api_student.Name,
-                    age: api_student.Age,
-                    date: api_student.Date,
-                    programming: api_student.programming,
-                });
-            })
-        );
-    }, []);
+    //             // // Setting a data from api
+    //             setdata({
+    //                 name: api_student.Name,
+    //                 age: api_student.Age,
+    //                 date: api_student.Date,
+    //                 programming: api_student.programming,
+    //             });
+    //         })
+    //     );
+    // }, []);
  
     // useEffect(() => {
     //   axios.get('http://localhost:8080/tasks_json')
@@ -76,23 +79,25 @@ function App() {
 
                 {/* <ul>              {api_student.map(patient => (                <li key={patient.task_id}>{patient.person}</li>              ))}            </ul> */}
                 {/* Calling a data from setdata for showing */}
-                <p>{api_student.name}</p>
+                {/* <p>{api_student.name}</p>
                 <p>{api_student.age}</p>
                 <p>{api_student.date}</p>
-                <p>{api_student.programming}</p>
-                <ObfClientsApp/>
+                <p>{api_student.programming}</p> */}
+                {/* <ObfClientsApp/> */}
                     {/* <ul>
                 {posts.map(post => (        <li key={post.task_id}>{post.person}</li>      ))}    </ul>  );
  */}
                 
                 <h3>local file</h3>
-                <JsonDataDisplay />
-                <ObfApp/>
+                {/* <JsonDataDisplay />
+                <JsonDataHhiDisplay/> */}
+                <TableBeingFilter/>
+                {/* <ObfApp/> */}
 
                 <h3> to file doesnt work</h3>
                 FrmTableData npm start to get this working. react is front end and you send data to back end api to save it.
-                <FrmTableData />
-                <TasksApp/>
+                {/* <FrmTableData />
+                <TasksApp/> */}
                 
             </div>
         </div>
