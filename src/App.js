@@ -11,6 +11,12 @@ import ObfClientsApp from "./BackEnd/ObfClients";
 import JsonDataHhiDisplay from "./JsonFileToTable/HhiReservationsTable";
 
 import TableBeingFilter from "./BackEnd/TableFilter/TableBeingFilterjsx";
+import UseStateCounterApp from "./test/UseStateCounter"
+import UseStateCounterV2App from "./test/UseStateCounterV2"
+import UseEffectApp from "./test/UseEffect"
+import UseRefApp from './test/useRef'
+import UseMemoApp from './test/useMemo'
+import Parent from './test/ParamPassParent'
 
 //npm install axios
 // import axios from 'axios'; // not used. get CORS error two API on one machine.
@@ -98,7 +104,11 @@ function App() {
                 FrmTableData npm start to get this working. react is front end and you send data to back end api to save it.
                 {/* <FrmTableData />
                 <TasksApp/> */}
+                {/* <UseRefApp/> */}
+                <UseMemoApp/>
                 
+                <Parent />
+
             </div>
         </div>
     );
