@@ -17,6 +17,10 @@ import UseEffectApp from "./test/UseEffect"
 import UseRefApp from './test/useRef'
 import UseMemoApp from './test/useMemo'
 import Parent from './test/ParamPassParent'
+import ChatGptCallApi from './test/ChatGptApiCall1'
+import ChatGptFilterJsonApp from "./test/ChatGptFilterJson";
+import JsonPlaceholderUsersFunc from "./TestApi/JsonPlaceholderUsersjsx";
+import JsonAxiosLocaljsx from './TestApi/JsonAxiosLocaljsx'
 
 //npm install axios
 // import axios from 'axios'; // not used. get CORS error two API on one machine.
@@ -106,8 +110,10 @@ function App() {
                 <TasksApp/> */}
                 {/* <UseRefApp/> */}
                 <UseMemoApp/>
-                
+                {/* <ChatGptCallApi/> */}
+                {/* <ChatGptFilterJsonApp/> */}
                 <Parent />
+                <JsonAxiosLocaljsx/>
 
             </div>
         </div>
