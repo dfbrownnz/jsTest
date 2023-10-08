@@ -3,6 +3,10 @@ const app = express();
 const fs = require('fs');
 const _ = require('lodash');
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+
 // Sample JSON data
 var data =[
 {
