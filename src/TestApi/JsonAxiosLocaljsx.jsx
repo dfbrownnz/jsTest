@@ -7,23 +7,25 @@ import axios from 'axios';
     useEffect(() => {
       const fetchData = async () => {
         const { data } = await axios(
-          //"http://localhost:4000/", {
+          //"http://localhost:8080", 
             {
-              url: "/users?dave=Hero",
+              url: "/users?id=2",
               baseURL: "",
               withCredentials: false,
+              method: 'POST', // POST doesnt work
               headers: {
                 'Access-Control-Allow-Origin' : '*',
-                'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',   
+                'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+                'Accept': 'application/json', // 'Access-Control-Allow-Origin
+                'Content-Type': 'application/json'   
               }, 
-              body: {
-                foo: 'bar', // This is the body part
-              }
+              data: JSON.stringify({"age": 1,"name": "Dave Brown yo da man","username": "Bubba", "email": "Sincere@april.biz", "gender": "male"})
             }
         );
-        setUsers({ hits: data });
+        setUsers({ hits: data } );
       };
       fetchData();
+      //console.log(users['hits']);
     }, [setUsers]);
   
     return (

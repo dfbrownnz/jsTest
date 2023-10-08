@@ -23,6 +23,7 @@ function TableBeingFilter() {
 
   return (
     <div>
+      <h5>TableBeingFilterApp</h5>
       <input type="text" placeholder="Filter" name="filter"  onChange={evt => FunctionFilter(evt)} />
       <button onClick={resetTable}>Reset Table</button>
 

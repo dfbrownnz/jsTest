@@ -3,7 +3,7 @@ import Child from './ParamPassChild'
 
 class Parent extends React.Component {
 	state = {
-		msg: "",
+		msg: "property parentCallback is Child Parent",
 	}
 
 	handleCallback = (childData) => {

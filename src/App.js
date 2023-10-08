@@ -17,10 +17,9 @@ import UseEffectApp from "./test/UseEffect"
 import UseRefApp from './test/useRef'
 import UseMemoApp from './test/useMemo'
 import Parent from './test/ParamPassParent'
-import ChatGptCallApi from './test/ChatGptApiCall1'
-import ChatGptFilterJsonApp from "./test/ChatGptFilterJson";
 import JsonPlaceholderUsersFunc from "./TestApi/JsonPlaceholderUsersjsx";
 import JsonAxiosLocaljsx from './TestApi/JsonAxiosLocaljsx'
+import UseEffectV1App from './test/UseEffectV1'
 
 //npm install axios
 // import axios from 'axios'; // not used. get CORS error two API on one machine.
@@ -77,14 +76,32 @@ function App() {
     //https://www.geeksforgeeks.org/how-to-parse-json-data-into-react-table-component/?ref=ml_lbp
 
 
+    function Cup({ guest }) {
+        return <h6>Tea cup for guest #{guest}</h6>;
+      }
+      
+      function TeaSet() {
+        return (
+          <>
+            <Cup guest={1} />
+            <Cup guest={2} />
+            <Cup guest={3} />
+          </>
+        );
+      }
+      function TeaGathering() {
+        let cups = [];
+        for (let i = 1; i <= 2; i++) {
+          cups.push(<Cup key={i} guest={i} />);
+        }
+        return cups;
+      }
+
     return (
         <div className="App">
             <header className="App-header">
             </header>
             <div className="container">
-              
-                <h3>from API</h3>
-                task-controller
                 {/* <ul>              {patients.map(patient => (                <li key={patient.task_id}>{patient.person}</li>              ))}            </ul> */}
 
                 {/* <ul>              {api_student.map(patient => (                <li key={patient.task_id}>{patient.person}</li>              ))}            </ul> */}
@@ -98,7 +115,8 @@ function App() {
                 {posts.map(post => (        <li key={post.task_id}>{post.person}</li>      ))}    </ul>  );
  */}
                 
-                <h3>local file</h3>
+                <TeaSet/>
+                <TeaGathering />
                 {/* <JsonDataDisplay />
                 <JsonDataHhiDisplay/> */}
                 <TableBeingFilter/>
@@ -114,6 +132,7 @@ function App() {
                 {/* <ChatGptFilterJsonApp/> */}
                 <Parent />
                 <JsonAxiosLocaljsx/>
+                <UseEffectV1App />
 
             </div>
         </div>
